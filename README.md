@@ -1,4 +1,4 @@
-# Containerized Builds and Proces
+# Containerized Builds and Processes
 
 ## Purpose
 
