@@ -1,0 +1,8 @@
+FROM ubuntu:24.04
+WORKDIR /app
+#ENV XDG_DATA_DIRS="/var/lib/flatpak/exports/share:/home/ubuntu/.local/share/flatpak/exports/share:/root/.local/share/flatpak/exports/share:$XDG_DATA_DIRS"
+RUN apt update && apt -y install flatpak
+#RUN apt-get update && apt-get install -y dbus
+RUN dbus-daemon --system
+RUN flatpak install -y https://flathub.org/beta-repo/appstream/org.gimp.GIMP.flatpakref
+ENTRYPOINT echo "To run GIMP's dev latest version through flatpak, type the following command: flatpak run -v org.gimp.GIMP//beta" && bash
