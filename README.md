@@ -2,7 +2,7 @@
 
 ## Purpose
 
-The purpose of this repository is to have automated processes and builds of tools to facilitate development and avoid dependency mayhem.
+The purpose of this repository is to have automated processes and builds of tools to facilitate development, formalize repeatable tasks, and avoid dependency mayhem by isolatic specific applications from the host system. It is mainly intended for personal usage, yet others can find it beneficial.
 
 ## Structure
 
